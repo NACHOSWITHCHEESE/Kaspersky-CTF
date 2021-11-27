@@ -29,7 +29,7 @@ int main(int argc, char **argv){
   setvbuf(stdout, NULL, _IONBF, 0);
   gid_t gid = getegid();
   setresgid(gid, gid, gid);
-  puts("Welcome to 64-bit. Give me a string that gets you the flag: ");
+  puts("Enter a string that grabs you the flag: ");
   vuln();
   return 0;
 }
